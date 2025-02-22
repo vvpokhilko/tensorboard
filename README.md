@@ -4,7 +4,7 @@ This project explores **experiment tracking** using **TensorBoard** while traini
 ## Project Workflow:
 
 ### 1. Dataset & Preprocessing:
-* Used a subset of the [Food101 dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/).
+* Used a subset of the [Food101 dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/) (20% of the data and 3 classes only - pizza, steak and sushi).
 * Applied **TrivialAugmentWide()** for augmentation in one experiment and compared results with non-augmented data.
 
 ### 2. Model Selection:
