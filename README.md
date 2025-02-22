@@ -3,14 +3,14 @@ This project explores **experiment tracking** using **TensorBoard** while traini
 
 ## Project Workflow:
 
-1. Dataset & Preprocessing:
-* Used a standard image dataset (e.g., CIFAR-10 or ImageNet subset).
+### 1. Dataset & Preprocessing:
+* Used a subset of the [Food101 dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/).
 * Applied **TrivialAugmentWide()** for augmentation in one experiment and compared results with non-augmented data.
 
-2. Model Selection:
+### 2. Model Selection:
 * Trained **EfficientNetB3** and **RegNet_Y_1_6GF**, both available in `torchvision.models`.
 
-3. Experiment Setup:
+### 3. Experiment Setup:
 
 * Conducted eight experiments by varying:
   * Models: **EfficientNetB3** vs. **RegNet_Y_1_6GF**
@@ -18,12 +18,12 @@ This project explores **experiment tracking** using **TensorBoard** while traini
   * Training Duration: **5 vs. 10 epochs**
 * Used **TensorBoard** to log training loss, validation accuracy, and model performance.
 
-4. Training & Tracking:
+### 4. Training & Tracking:
 
 * Logged key metrics (`loss`, `accuracy`) in TensorBoard.
 * Compared model convergence, generalization, and improvement with longer training and augmentation.
 
-5. Results & Analysis:
+### 5. Results & Analysis:
 
 * Observed the impact of **augmentation** on accuracy improvements.
 * Evaluated whether **longer training (10 epochs) outperforms 5 epochs**.
